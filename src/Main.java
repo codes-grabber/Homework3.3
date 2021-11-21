@@ -32,12 +32,12 @@ public class Main {
 // фамилии должны выводиться все телефоны.
 
         Phonebook.add("Shcherbinin", "9171400798");
-        Phonebook.add("Krahmalni", "9175548");
-        Phonebook.add("Krahmalni", "000000000");
+        Phonebook.add("Pupkin", "9175548");
+        Phonebook.add("Pupkin", "000000000");
+//
+//        System.out.println(Phonebook.phonebook);
 
-        System.out.println(Phonebook.phonebook);
-
-        Phonebook.get("Krahmalni");
+        System.out.println(Phonebook.get("Pupkin"));
 
     }
 

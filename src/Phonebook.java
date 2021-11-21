@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Phonebook {
@@ -15,14 +17,16 @@ public class Phonebook {
         phonebook.put(phone, secondName);
     }
 
-    public static void get(String secondName){
+    public static List get(String secondName){
+        List <String> getNumbers = new ArrayList<>();
         phonebook.forEach((key, value) ->
                 {
                     if (value == secondName) {
-                        System.out.println(key);
+                        getNumbers.add(key);
                     }
                 }
                 );
+        return getNumbers;
 
     }
 }
